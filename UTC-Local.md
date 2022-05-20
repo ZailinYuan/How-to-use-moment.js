@@ -11,7 +11,8 @@ console.log(m)
 let mUITC = moment.utc(date).format('YYYY-MM-DD HH:mm:ss')
 console.log(mUITC)
 
-let mUTC = moment.utc(date)
-let mLoc = moment(mUTC).local().format('YYYY-MM-DD HH:mm:ss')
+// Tranfer UTC time back to local time
+let mUTC = moment.utc(date) // JS date to UTC
+let mLoc = moment(mUTC).local().format('YYYY-MM-DD HH:mm:ss') // UTC to local
 console.log(mLoc)
 ```
